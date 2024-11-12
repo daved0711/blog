@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --dark: "#000";
+    --light: "#fff";
+  }
+
+  body {
+    @apply font-poppins overflow-x-hidden bg-dark text-light;
+  }
+  .container {
+    @apply max-w-[1600px] w-full px-4 mx-auto lg:px-[15rem];
+  }
+  h1 {
+    @apply text-[90px];
+  }
+  h2 {
+    @apply text-[33px];
+  }
+  h3 {
+    @apply text-[24px];
+  }
+  h4 {
+    @apply text-[16px];
+  }
+  h5 {
+    @apply text-[12px];
+  }
+  h6 {
+    @apply text-[19px];
+  }
+  p {
+    @apply text-[16px];
+  }
+}
+
+@layer components {
+  .blog h3 {
+    @apply hover:underline cursor-pointer;
+  }
+  .Header_menu li {
+    @apply hover:underline cursor-pointer;
+  }
+  .fames__text {
+    @apply gap-2;
+  }
+  .right--details {
+    @apply flex gap-5;
+  }
+  .fames__text2 {
+    @apply flex flex-col gap-2 w-full;
+  }
+  .fames__text2 h4 {
+    @apply text-primaryy;
+  }
+  .fames__text2 p {
+    @apply font-bold lg:w-[9rem];
+  }
+  .fames__text2 a {
+    @apply hover:underline;
+  }
+  .fames__text a {
+    @apply hover:underline;
+  }
+  .fames__img2 {
+    @apply w-full h-full;
+  }
+
+  /* Latest */
+  .latest__card {
+    @apply flex flex-col;
+  }
+  .latest__text {
+    @apply flex flex-col gap-2;
+  }
+  .latest__date small {
+    @apply text-primaryy;
+  }
+  .latest__p {
+    @apply pb-5;
+  }
+  .latest__img {
+    @apply object-cover;
+  }
+  .fames__text2 small {
+    @apply hover:underline cursor-pointer;
+  }
+  .latest__img {
+    @apply pb-5;
+  }
+
+  /* Features */
+  .feature__details {
+    @apply lg:flex lg:flex-row gap-3;
+  }
+  .feature__text small {
+    @apply text-primaryy;
+  }
+  .feature__text {
+    @apply flex flex-col gap-4 max-w-[30rem];
+  }
+  .feature__text h4 {
+    @apply font-semibold;
+  }
+  .feature__text3 small {
+    @apply text-primaryy;
+  }
+  .feature__text3 {
+    @apply border-b border-gray  flex flex-col gap-2;
+  }
+  .feature__text3 p {
+    @apply font-semibold;
+  }
+
+  .feature__img {
+    @apply pb-5;
+  }
+
+  /* FOOTer */
+  .footer__menu ul li {
+    @apply hover:underline cursor-pointer;
+  }
+  .footer__title {
+    @apply hover:underline cursor-pointer;
+  }
+}
+
+.light {
+  background-color: var(--dark);
+  color: var(--light);
+}
